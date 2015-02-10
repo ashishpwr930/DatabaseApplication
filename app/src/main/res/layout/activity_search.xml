@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.harshad.databaseapplication.SearchActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Friends Name"
+        android:id="@+id/lblName"
+        android:layout_marginTop="129dp"
+        android:height="40dp"
+        android:width="250dp"
+        android:textAlignment="center"
+        android:textColor="#ffff1f0e"
+        android:textColorHighlight="#ff25f3ff"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textIsSelectable="false"
+        android:textStyle="bold|italic"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtSearchName"
+        android:layout_below="@+id/lblName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:autoText="true"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/btnSearch"
+        android:layout_below="@+id/txtSearchName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblShow"
+        android:layout_marginTop="38dp"
+        android:height="40dp"
+        android:width="250dp"
+        android:textAlignment="center"
+        android:textColor="#ffff1f0e"
+        android:textColorHighlight="#ff25f3ff"
+        android:textSize="20dp"
+        android:textIsSelectable="false"
+        android:textStyle="bold|italic"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/btnSearch"
+        android:layout_alignRight="@+id/lblName"
+        android:layout_alignEnd="@+id/lblName" />
+</RelativeLayout>
